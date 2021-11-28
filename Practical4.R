@@ -127,13 +127,13 @@ for (i in 1:length(los)-1) {
 }
 
 plot(meds, prob_em,
-     main = 'Figure 1: LO Emergency vs LoS',
+     main = 'Figure 2: LO Emergency vs LoS',
      xlab = 'Length of Stay',
      ylab = 'Log Odds Emergency vs Elective')
 lines(smooth.spline(meds,prob_em,df=4))
 
 plot(meds, prob_ur,
-     main = "Figure 2: LO Urgent vs LoS",
+     main = "Figure 3: LO Urgent vs LoS",
      xlab = 'Length of Stay',
      ylab = 'Log Odds Urgent vs Elective')
 lines(smooth.spline(meds,prob_ur,df=4))
